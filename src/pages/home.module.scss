@@ -1,0 +1,100 @@
+@import "src/styles/variables";
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $greenPrimary;
+}
+
+.imgLogin {
+  height: 60vh;
+  width: 30vw;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  @media (max-width: 1024px) {
+    width: 40vw;
+  }
+  @media(max-width: 768px) {
+    width: 45vw;
+    height: 50vh;
+  }
+  @media(max-width: 425px) {
+    width: 90vw;
+    display: none;
+  }
+
+}
+
+.formContainer {
+  height: 60vh;
+  display: flex;
+  border-radius: 10px;
+  background-color: white;
+  @media(max-width: 768px) {
+    height: 50vh;
+  }
+  @media (max-width: 425px) {
+    flex-direction: column;
+    height: 50vh;
+  }
+
+}
+
+.formTitle {
+  color: $greenPrimary;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  @media (min-width: 1920px) {
+    margin-bottom: 60px;
+  }
+
+}
+
+.form {
+  width: 30vw;
+  padding: 30px !important;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  @media (max-width: 1024px) {
+    width: 40vw;
+  }
+  @media(max-width: 768px) {
+    width: 45vw;
+    height: 50vh;
+    span {
+      margin-top: 5px;
+      font-size: 12px;
+    }
+  }
+  @media(max-width: 425px) {
+    width: 90vw;
+    height: 50vh;
+    span {
+      margin-top: 5px;
+      font-size: 10px;
+    }
+  }
+
+}
+
+.formFooter {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @media(max-width: 768px) {
+    margin-top: 20px;
+  }
+
+  a {
+    &:hover {
+      color: $greenTertiary;
+    }
+  }
+}

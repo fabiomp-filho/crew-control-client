@@ -1,0 +1,21 @@
+@import "src/styles/variables";
+
+.layout{
+  height: 100vh;
+}
+.header{
+  display: flex;
+  align-items: center;
+  background-color: $greenPrimary !important;
+  h3{
+    color: $greenPrimary;
+  }
+  justify-content: space-between;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    flex: 1;
+    height: auto;
+    gap: 5px
+  }
+}
+
