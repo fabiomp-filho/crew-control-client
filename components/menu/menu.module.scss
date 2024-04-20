@@ -88,7 +88,7 @@
   line-break: auto;
   background-color: $hoverAltBlack;
   color: $greenPrimary;
-  box-shadow: 0 5px 5px 0 $background;
+  box-shadow: 0 0 1px 0 $hoverAltBlack;
 
   &:first-child {
     border-bottom-left-radius: 5px;
@@ -110,7 +110,7 @@
     transition: 0s;
     background-color: $hoverAltBlack;
     color: $greenTertiary;
-    box-shadow: 0 0 10px 5px $background;
+    box-shadow: 0 0 1px 0 $hoverAltBlack;
   }
 
   @media (max-width: 425px) {
