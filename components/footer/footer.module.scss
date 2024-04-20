@@ -1,0 +1,42 @@
+@import "src/styles/variables";
+
+.footer {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  padding: 6px;
+  border-radius: 5px;
+  background-color: $background;
+  color: $greenPrimary;
+  span{
+    gap: 0;
+  }
+}
+.name{
+  color: $altBlack;
+  margin-left: 4px;
+}
+.icons{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: 8px;
+}
+.iconMail {
+  cursor: pointer;
+  font-size: 20px;
+  color: $altBlack !important;
+}
+
+.iconGithub {
+  cursor: pointer;
+  font-size: 20px;
+  color: $altBlack !important;
+}
+
+.iconLinkedin {
+  cursor: pointer;
+  font-size: 20px;
+  color: $altBlack !important;
+}
+

@@ -1,21 +1,31 @@
 @import "src/styles/variables";
 
-.layout{
+.layout {
   height: 100vh;
 }
-.header{
+
+.headerContainer {
   display: flex;
   align-items: center;
   background-color: $greenPrimary !important;
-  h3{
+
+  h3 {
     color: $greenPrimary;
   }
+
   justify-content: space-between;
   @media (max-width: 768px) {
     flex-direction: column;
-    flex: 1;
-    height: auto;
+    height: 120px !important;
     gap: 5px
   }
+}
+
+.footerContainer {
+  max-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $greenPrimary !important;
 }
 

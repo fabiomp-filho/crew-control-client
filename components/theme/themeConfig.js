@@ -13,16 +13,15 @@ const theme = {
             colorPrimaryHover: Colors.greenSecondary
         },
         Menu: {
-            colorPrimary: Colors.greenTertiary,
             horizontalItemHoverBg: Colors.hoverAltBlack,
             horizontalItemSelectedColor: Colors.greenTertiary,
             horizontalItemSelectedBg: Colors.hoverAltBlack,
             itemHoverColor: Colors.greenTertiary,
-            itemColor: Colors.greenTertiary,
-            itemBg: Colors.altBlack,
+            itemColor: Colors.altBlack,
+            itemBg: Colors.greenSecondary,
             popupBg: Colors.altBlack,
             horizontalItemBorderRadius: 5,
-            itemPaddingInline: 30
+            itemMarginBlock: 0
         },
         Layout: {
             bodyBg: Colors.background

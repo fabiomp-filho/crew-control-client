@@ -1,0 +1,122 @@
+@import "src/styles/variables";
+
+.containerList {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-weight: bold;
+  background-color: $hoverAltBlack;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px 0 $hoverAltBlack;
+}
+
+.itemList {
+  transition: 0.6s;
+  display: flex;
+  align-items: center;
+  height: 20px;
+  cursor: pointer;
+  padding: 20px;
+  margin-right: 1px;
+  background-color: $greenSecondary;
+  line-break: auto;
+  box-shadow: 0 0 1px 0 $hoverAltBlack;
+  color: $altBlack;
+
+  &:first-child {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    margin-right: 1px;
+
+    &:hover {
+      transition: 0.6s;
+      background-color: $hoverAltBlack;
+      color: $greenPrimary;
+      box-shadow: 0 0 10px 1px $background;
+    }
+  }
+
+  &:last-child {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-right: 0;
+
+  }
+
+  &:hover {
+    transition: 0.6s;
+    background-color: $hoverAltBlack;
+    color: $greenPrimary;
+    box-shadow: 1px 0 5px 1px $background;
+  }
+
+
+  &:active {
+    transition: 0s;
+    background-color: $hoverAltBlack;
+    color: $greenTertiary;
+    box-shadow: 0 0 10px 5px $background;
+  }
+
+  @media (max-width: 425px) {
+    padding: 10px;
+    height: 40px;
+  }
+  @media (max-width: 375px) {
+    width: 120px;
+    padding: 10px;
+  }
+  @media (max-width: 320px) {
+    width: 100px;
+    padding: 10px;
+    font-size: 13px;
+  }
+}
+
+.itemActive {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  cursor: pointer;
+  padding: 20px;
+  margin-right: 1px;
+  line-break: auto;
+  background-color: $hoverAltBlack;
+  color: $greenPrimary;
+  box-shadow: 0 5px 5px 0 $background;
+
+  &:first-child {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    margin-right: 1px;
+  }
+
+  &:last-child {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-right: 0;
+  }
+
+  &:hover {
+    color: $greenPrimary;
+  }
+
+  &:active {
+    transition: 0s;
+    background-color: $hoverAltBlack;
+    color: $greenTertiary;
+    box-shadow: 0 0 10px 5px $background;
+  }
+
+  @media (max-width: 425px) {
+    padding: 10px;
+    height: 40px;
+  }
+  @media (max-width: 375px) {
+    width: 120px;
+  }
+  @media (max-width: 320px) {
+    width: 100px;
+    font-size: 13px;
+  }
+}
