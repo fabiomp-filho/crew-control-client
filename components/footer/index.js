@@ -1,5 +1,6 @@
-import {GithubOutlined, LinkedinOutlined, MailOutlined} from "@ant-design/icons";
+import {GithubFilled, LinkedinFilled, MailOutlined,} from "@ant-design/icons";
 import styles from "./footer.module.scss"
+
 const CustomFooter = () => {
 
     return (
@@ -7,13 +8,11 @@ const CustomFooter = () => {
             <div className={styles.footer}>
                 Copyright &copy; Designed by <span className={styles.name}>Fábio Martins</span>
                 <div className={styles.icons}>
-                    <MailOutlined className={styles.iconMail} color={"red"} title={"E-mail para contato"}/>
-                    <GithubOutlined className={styles.iconGithub} title={"Github"}/>
-                    <LinkedinOutlined className={styles.iconLinkedin} title={"Linkedin"}/>
+                    <MailOutlined className={styles.iconMail} title={"E-mail para contato"}/>
+                    <GithubFilled className={styles.iconGithub} title={"Github"}/>
+                    <LinkedinFilled className={styles.iconLinkedin} title={"Linkedin"}/>
                 </div>
-
             </div>
-
         </>
     )
 }

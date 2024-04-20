@@ -1,7 +1,9 @@
 import styles from "./header.module.scss";
 import {useRouter} from "next/router";
 import HorizontalMenu from "../menu/HorizontalMenu";
-import {itensHorizontal} from "../menu/itensHorizontal";
+import {itemsHorizontal} from "../menu/itemsHorizontal";
+import UserArea from "../userArea/UserArea";
+import {userAreaItems} from "../userArea/items";
 
 const CustomHeader = () => {
     const router = useRouter();
@@ -17,7 +19,8 @@ const CustomHeader = () => {
                 <img className={styles.headerLogo} src={"crew-icon-96.ico"} alt={"crew-icon"}/>
                 <h3>CREW CONTROL</h3>
             </div>
-            <HorizontalMenu items={itensHorizontal} router={router}/>
+            <HorizontalMenu items={itemsHorizontal} router={router}/>
+            <UserArea router={router} items={userAreaItems}/>
         </>
 
     )

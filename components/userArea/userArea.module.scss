@@ -1,0 +1,20 @@
+@import "src/styles/variables";
+
+.dropdownToggle {
+ background-color: $greenSecondary;
+ height: 40px;
+ padding: 20px;
+ border-radius: 5px;
+ box-shadow: 0 0 10px 0 $hoverAltBlack;
+ color: $hoverAltBlack;
+ transition: 0.4s ease-out;
+ margin-bottom: 5px;
+ &:hover{
+  cursor: pointer;
+ }
+ &:active{
+  transition: 0.1s ease-in;
+  color: $altBlack;
+  box-shadow: 0 0 30px 0 $hoverAltBlack;
+ }
+}

@@ -11,6 +11,7 @@ const Login = () => {
     const onFinish = (data) => {
         if (data.login === "teste" && data.password === "123456") {
             router.push("/home")
+
         } else {
             messageApi.error("Credenciais Inválidas")
         }

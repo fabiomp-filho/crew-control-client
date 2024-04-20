@@ -1,6 +1,6 @@
 import {AiFillHome} from "react-icons/ai";
 
-export const itensHorizontal = [
+export const itemsHorizontal = [
     {
         key: "home",
         label: <AiFillHome />
