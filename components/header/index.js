@@ -16,7 +16,7 @@ const CustomHeader = () => {
     return (
         <>
             <div className={styles.containerLogo} onClick={goHome}>
-                <img className={styles.headerLogo} src={"crew-icon-96.ico"} alt={"crew-icon"}/>
+                <img className={styles.headerLogo} src={"crew-icon-black-96.ico"} alt={"crew-icon"}/>
                 <h3>CREW CONTROL</h3>
             </div>
             <HorizontalMenu items={itemsHorizontal} router={router}/>

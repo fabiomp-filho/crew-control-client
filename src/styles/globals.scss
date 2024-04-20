@@ -15,3 +15,19 @@ input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 1000px white inset;
 }
 
+.ant-dropdown {
+  font-weight: bold !important;
+
+  .ant-dropdown-menu-item {
+
+    &:hover {
+      color: $greenPrimary !important;
+      background-color: $hoverAltBlack !important;
+    }
+  }
+
+  // Usando !important para garantir aplicação do estilo
+  .ant-dropdown-menu-item-selected {
+    background-color: #d9d9d9 !important;
+  }
+}

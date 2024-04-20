@@ -1,23 +1,41 @@
+import {IdcardOutlined, InfoCircleOutlined, LogoutOutlined, MailOutlined, SettingOutlined} from "@ant-design/icons";
+
 export const userAreaItems = [
     {
         key: '1',
         type: 'group',
-        label: 'Informações',
+        label:
+            <>
+                <InfoCircleOutlined/>
+                <span> Informações</span>
+            </>,
         children: [
             {
                 key: '1-1',
-                label: 'Nome',
+                label:
+                    <>
+                        <IdcardOutlined />
+                        <span> Usuário</span>
+                    </>,
             },
             {
                 key: '1-2',
-                label: 'E-mail',
+                label:
+                    <>
+                        <MailOutlined/>
+                        <span> E-mail</span>
+                    </>,
             }
         ],
     },
     {
         key: '2',
         type: 'group',
-        label: 'Configurações',
+        label:
+            <>
+                <SettingOutlined />
+                <span> Configurações</span>
+            </>,
         children: [
             {
                 key: '2-1',
@@ -27,6 +45,11 @@ export const userAreaItems = [
     },
     {
         key: 'sair',
-        label: 'Sair',
+        label:
+            <>
+                <LogoutOutlined/>
+                <span> Sair</span>
+
+            </>,
     }
 ];

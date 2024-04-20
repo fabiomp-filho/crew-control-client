@@ -25,7 +25,7 @@ const theme = {
         },
         Layout: {
             bodyBg: Colors.background
-        }
+        },
 
     },
 };

@@ -5,7 +5,8 @@
   padding: 20px;
   display: flex;
   align-items: center;
-  background-color: $background;
+  background-color: $greenSecondary;
+  color: $altBlack;
   border-radius: 5px !important;
   gap: 10px;
 
@@ -17,16 +18,18 @@
       font-size: 14px;
     }
   }
-  box-shadow: 0 0 1px 0 white;
+  box-shadow: 0 0 10px 0 $hoverAltBlack;
   transition: 0.8s ease-in;
 
   &:hover {
     cursor: pointer;
-    transition: 0.5s ease-out;
-    box-shadow: 0 0 15px 1px $greenTertiary;
-    gap: 12px;
+    transition: 0.2s ease-out;
+    color: $hoverAltBlack;
   }
-
+  &:active{
+    transition: 0s ease-out;
+    box-shadow: 0 0 5px 0 $greenTertiary;
+  }
 }
 
 .headerLogo {
