@@ -4,9 +4,11 @@ import HorizontalMenu from "../menu/HorizontalMenu";
 import {itemsHorizontal} from "../menu/itemsHorizontal";
 import UserArea from "../userArea/UserArea";
 import {userAreaItems} from "../userArea/items";
+import {getUser} from "@/utils/userUtils";
 
 const CustomHeader = () => {
     const router = useRouter();
+    const user = getUser();
 
     const goHome = () => {
         router.push("/home");
@@ -20,7 +22,7 @@ const CustomHeader = () => {
                 <h3>CREW CONTROL</h3>
             </div>
             <HorizontalMenu items={itemsHorizontal} router={router}/>
-            <UserArea router={router} items={userAreaItems}/>
+            <UserArea router={router} items={userAreaItems(user)}/>
         </>
 
     )
