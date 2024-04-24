@@ -4,7 +4,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: $greenPrimary;
+  background: rgb(239,234,228);
+  background: linear-gradient(180deg, rgba(239,234,228,1) 0%, rgba(141,185,134,1) 80%, rgba(97,97,97,1) 100%);
 }
 
 .imgLogin {
@@ -38,6 +39,7 @@
     flex-direction: column;
     height: 50vh;
   }
+  box-shadow: 0 0 20px 3px $hoverAltBlack;
 
 }
 

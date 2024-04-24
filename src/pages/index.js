@@ -15,24 +15,13 @@ const Login = () => {
 
     const [loading, setLoading] = useState(false);
 
-    const verifyRoles = (role) => {
-        if (role === "Administrador") {
-            return "/admin/home"
-        }
-        if (role === "Lider") {
-            return "/leader/home"
-        }
-        if (role === "Colaborador") {
-            return "/collaborator/home"
-        }
-    }
     const onFinish = (data) => {
         setLoading(true);
         AuthService.auth(data).then(response => {
             messageApi.success("Tudo certo!").then(() => {
                 setToken(response.token);
                 setUser(response.user);
-                router.push(verifyRoles(response.user.role));
+                router.push("/home");
                 setLoading(false);
             });
 
