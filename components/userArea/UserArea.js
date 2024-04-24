@@ -1,11 +1,15 @@
 import {Dropdown, Space} from "antd";
-import {UserOutlined} from "@ant-design/icons";
+import {TeamOutlined} from "@ant-design/icons";
 import styles from "./userArea.module.scss"
 
 const UserArea = ({router, items}) => {
     const onClick = ({key}) => {
         if (key === "sair") {
             router.push("/")
+            return
+        }
+        if (key === "redefinir-senha") {
+            router.push("/redefinir-senha")
         }
     }
 
@@ -20,7 +24,7 @@ const UserArea = ({router, items}) => {
         >
 
             <Space className={styles.dropdownToggle}>
-                <UserOutlined/>Área do Usuário
+                <TeamOutlined/>Área do Usuário
             </Space>
 
         </Dropdown>

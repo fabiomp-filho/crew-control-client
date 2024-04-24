@@ -1,8 +1,8 @@
-const Home = () => {
+const AdminHome = () => {
 
-    return(
+    return (
         <div>
         </div>
     )
 }
-export default Home;
+export default AdminHome;

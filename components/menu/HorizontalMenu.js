@@ -1,5 +1,7 @@
 import styles from "./menu.module.scss";
 import Link from "next/link";
+import {Colors} from "../theme/colors";
+import {Tooltip} from "antd";
 
 const HorizontalMenu = ({items = [], router}) => {
 
@@ -11,13 +13,15 @@ const HorizontalMenu = ({items = [], router}) => {
         <div className={styles.containerList}>
             {items.map((item) => {
                 return (
-                    <Link
-                        className={isRouteActive(`/${item.key}`) ? styles.itemActive : styles.itemList}
-                        key={item.key}
-                        href={`/${item.key}`}
-                    >
-                        {item.label}
-                    </Link>
+                    <Tooltip title={`Navegar para ${item.tooltip}`} color={Colors.hoverAltBlack}>
+                        <Link
+                            className={isRouteActive(item.path) ? styles.itemActive : styles.itemList}
+                            key={item.key}
+                            href={item.path}
+                        >
+                            {item.label}
+                        </Link>
+                    </Tooltip>
                 )
             })}
         </div>
