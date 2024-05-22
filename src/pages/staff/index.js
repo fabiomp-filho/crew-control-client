@@ -1,8 +1,8 @@
-const AdminStaff = () => {
+const Staff = () => {
 
     return(
         <div>
         </div>
     )
 }
-export default AdminStaff;
+export default Staff;

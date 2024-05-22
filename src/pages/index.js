@@ -10,11 +10,9 @@ import {setToken} from "@/utils/tokenUtils";
 import {setUser} from "@/utils/userUtils";
 
 const Login = () => {
-    const [messageApi, contextHolder] = message.useMessage();
     const router = useRouter();
 
     const [loading, setLoading] = useState(false);
-
     const onFinish = (data) => {
         setLoading(true);
         AuthService.auth(data).then(response => {
@@ -25,8 +23,7 @@ const Login = () => {
                 setLoading(false);
             });
 
-        }).catch(err => {
-            messageApi.error(err.response.data)
+        }).catch(() => {
             setLoading(false);
         })
     }
@@ -34,7 +31,6 @@ const Login = () => {
     return (
 
         <main className={styles.container}>
-            {contextHolder}
             <div className={styles.formContainer}>
                 <div>
                     <img src={"/side-image-login.jpg"}

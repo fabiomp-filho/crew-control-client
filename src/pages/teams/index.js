@@ -1,8 +1,8 @@
-const AdminTeams = () => {
+const Teams = () => {
 
     return (
         <div>
         </div>
     )
 }
-export default AdminTeams;
+export default Teams;
